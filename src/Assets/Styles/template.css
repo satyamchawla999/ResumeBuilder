@@ -1,0 +1,64 @@
+/* Template 1 */
+
+/* .template1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.template1 img {
+    height: 150px;
+    width: 150px;
+}
+
+.template1 h1 {
+    color: red;
+}
+
+.template1 .resumeSection2 {
+    margin-top: 60px;
+} */
+
+
+
+
+/* Template 2 */
+
+.template2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+}
+
+.template2 img {
+    height: 150px;
+    width: 150px;
+}
+
+.template2 h1 {
+    color: rgb(109, 187, 239);
+}
+
+.template2 .resumeSection2 {
+    margin-top: 60px;
+}
+
+/* Template 3 */
+
+.template3 {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.template3 h1 {
+    color: brown;
+}
+
+.template3 img {
+    height: 150px;
+    width: 150px;
+}
+
+.template3 .resumeSection2 {
+    margin-top: 60px;
+}
