@@ -1,8 +1,19 @@
 .cvItems {
     background-color: aliceblue;
     height: 200px;
-    width: 400px;
+    width: 380px;
     margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.draftItems {
+    background-color: aliceblue;
+    height: 150px;
+    width: 330px;
+    /* margin: 20px; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -22,6 +33,11 @@
     width: 150px;
 }
 
+.draftItems .image img {
+    height: 100px;
+    width: 100px;
+}
+
 .buttons {
     color: white;
     height:200px;
@@ -31,6 +47,12 @@
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(#4C82CF,#745CBA);
+}
+
+.draftItems .buttons {
+    height: 150px;
+    background-image: linear-gradient(#4ccfcf,#407c88);
+
 }
 
 .buttons button {

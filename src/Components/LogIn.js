@@ -41,7 +41,7 @@ const LogIn = () => {
                     <form onSubmit={handleAdd}>
                         <input type="text" onChange={(e) => setNumber(e.target.value)} placeholder="Number" />
                         {validate && <p>Please Enter 10 Digit Number</p>}
-                        <button>LogIn</button>
+                        <button>Send OTP</button>
                     </form>
                 </div>
 

@@ -14,7 +14,6 @@ const Template2 = (props) => {
         summary,
         school,
         college,
-        template,
         phone
     } = props.values
 

@@ -1,17 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { Provider } from 'react-redux';
-import { persistor, store } from './store';
-import { PersistGate } from 'redux-persist/integration/react';
-import Main from './Components/Main';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { Provider } from "react-redux";
+import { ToastProvider } from "react-toast-notifications";
+import { persistor, store } from "./store";
+import { PersistGate } from "redux-persist/integration/react";
+import Main from "./Components/Main";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
-        <Main />
-      </PersistGate>
-    </Provider>
+    <ToastProvider
+      autoDismiss={true}
+      autoDismissTimeout={5000}
+      placement="top-left"
+    >
+      <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+          <Main />
+        </PersistGate>
+      </Provider>
+    </ToastProvider>
   </React.StrictMode>
 );

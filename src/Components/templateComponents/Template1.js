@@ -2,6 +2,8 @@ import "../../Assets/Styles/template.scss"
 
 const Template1 = (props) => {
 
+   
+
     const {
         name,
         email,
@@ -14,9 +16,9 @@ const Template1 = (props) => {
         summary,
         school,
         college,
-        template,
-        phone
+        phone,
     } = props.values
+
     return (
         <div className="template1">
             <div className="imgSection">

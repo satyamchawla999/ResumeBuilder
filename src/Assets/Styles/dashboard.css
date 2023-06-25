@@ -23,7 +23,36 @@
     width: 100%;
     height: 92vh;
     display: flex;
-    /* flex-direction: column; */
+}
+
+.published {
+    width: 70%;
+    border-right: 2px solid grey;
+}
+
+.published>div{
+    width: 100%;
+    height:80vh;
+    display: flex;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+}
+
+h3 {
+    padding-left: 20px;
+}
+
+.draft {
+    width: 30%;
+}
+
+.draft>div{
+    width: 100%;
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    /* flex-wrap: wrap; */
 }
 
 .dashboard .button {
@@ -38,4 +67,24 @@
     background-image: linear-gradient(#4687D2,#7957B8);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 

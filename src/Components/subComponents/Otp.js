@@ -8,7 +8,6 @@ import "../../Assets/Styles/common.css"
 const Otp = () => {
 
 
-    const [number, setNumber] = useState("");
     const [otp, setOtp] = useState('');
     const [validate, setValidate] = useState(false);
     const Navigate = useNavigate();
@@ -58,37 +57,7 @@ const Otp = () => {
             </div>
         </div>
 
-        // <div className="Otp">
-        //     <div className="OtpContainer">
-        //         <div className="leftBlock">
-        //             <img src={require("../../Assets/Images/otp.png")} alt="#" />
-        //         </div>
-
-        //         <div className="rightBlock">
-
-        //             <div className="formSection">
-        //                 <h1>Otp</h1>
-        //                 <form onSubmit={handleAdd}>
-        //                     {/* <label>Enter Otp</label>
-        //                     <input type="text" onChange={(e) => setNumber(e.target.value)} placeholder="0000" /> */}
-                            
-
-        //                     <OtpInput
-        //                         value={otp}
-        //                         onChange={setOtp}
-        //                         numInputs={4}
-        //                         renderSeparator={<span>-</span>}
-        //                         renderInput={(props) => <input {...props} />}
-        //                     />
-        //                     {validate && <p>Please Enter 4 Digit Otp OR Otp Is Not Valid</p>}
-        //                     <button>LogIn</button>
-        //                 </form>
-
-        //             </div>
-        //         </div>
-        //     </div>
-        // </div>
-    );
+        );
 }
 
 export default Otp;

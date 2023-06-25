@@ -2,7 +2,7 @@ import TemplateOptions from "./TemplateOptions";
 
 const FormInputs = (props) => {
 
-    const { handleTemplateChange, handleInputChange, handleSubmit, values, submit } = props;
+    const {handleTemplateChange, handleInputChange, handleSubmit, values,handleDraft, submit ,toggle, handleSaveChanges} = props;
 
     return (
         <>
@@ -68,8 +68,6 @@ const FormInputs = (props) => {
                 </div>
 
 
-
-
                 {/* <label>School</label> */}
                 <input type="text" name="school" value={values.school} onChange={handleInputChange} placeholder="School" />
 
@@ -85,8 +83,10 @@ const FormInputs = (props) => {
                 {submit && <p style={{ color: "green" }}>Details Submitted Successfully </p>}
                 <TemplateOptions
                     handleTemplateChange={handleTemplateChange}
+                    handleSaveChanges={handleSaveChanges}
+                    handleDraft={handleDraft}
+                    toggle={toggle}
                 />
-                <button className="formSubmitButton">Submit</button>
             </form>
 
 

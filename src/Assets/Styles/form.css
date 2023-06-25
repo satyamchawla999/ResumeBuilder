@@ -1,128 +1,169 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 .form {
-    background-image: linear-gradient(#4687D2,#7957B8);
-    font-family: Arial,sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 98vh;
+  background-image: linear-gradient(#4687d2, #7957b8);
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 98vh;
 }
 
 .formBox {
-    height: 90%;
-    width: 50%;
-    padding: 20px 70px;
-    border-radius: 10px;
-    background-color: #F1F1F1;
+  height: 90%;
+  width: 50%;
+  padding: 20px 70px;
+  border-radius: 10px;
+  background-color: #f1f1f1;
 }
 
 .formBox form input {
-    width: 100%;
+  width: 100%;
 
-    font-size: 20px;
-    
-    height: 30px;
-    border: none;
-    background-color: transparent;
-    border-bottom: 2px solid grey;
+  font-size: 20px;
 
-    margin-bottom:40px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid grey;
+
+  margin-bottom: 40px;
 }
 
 .formBox form p {
-    color: green;
-    width: 100%;
-    text-align: center;
-    margin-top: -10px;
+  color: green;
+  width: 100%;
+  text-align: center;
+  margin-top: -10px;
 }
 
 .inlineInputs input {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .inlineInputs {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .formBox form .formSubmitButton {
-    color: white;
-    padding: 10px;
-    border: none;
-    width: 100%;
-    border-radius: 3px;
-    margin-bottom: 10px;
-    background-image: linear-gradient(#4687D2,#7957B8);
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 32%;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  background-image: linear-gradient(#4687d2, #7957b8);
 }
 
-.templateOptions>div {
-    text-align: center;
-    color:#7957B8;
-    border: 1px solid #4687D2;
-    padding: 10px;
-    border-radius: 3px;
-    background-color: white;
-    width: 100%;
-    margin-bottom: 10px;
+.templateOptions {
+  display: flex;
+  justify-content:space-between;
+}
+
+.templateOptions div {
+  text-align: center;
+  color: #7957b8;
+  border: 1px solid #4687d2;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: white;
+  width: 32%;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .formButtons {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .formButtons button {
-    color:#7957B8;
-    border: 1px solid #4687D2;
-    padding: 10px;
-    width: 32%;
-    border-radius: 3px;
-    background-color: white;
-    margin-bottom: 10px;
+  color: #7957b8;
+  border: 1px solid #4687d2;
+  padding: 10px;
+  width: 32%;
+  border-radius: 3px;
+  background-color: white;
+  margin-bottom: 10px;
 }
 
 .choice {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100px;
-    justify-content: space-between;
-    /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  /* background-color: red; */
 }
 
 .choice span {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 300px;
-    height: 220px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 220px;
+  align-items: center;
 }
 
 .choice span img {
-    display: inline;
-    width: 120px;
-    height: 200px;
+  display: inline;
+  width: 120px;
+  height: 200px;
 }
 
 .modalButtons {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .modalButtons button {
-    color:#7957B8;
-    border: 1px solid #4687D2;
-    padding: 10px;
-    width: 32%;
-    border-radius: 3px;
-    background-color: white;
-    margin-bottom: 10px;
+  color: #7957b8;
+  border: 1px solid #4687d2;
+  padding: 10px;
+  width: 32%;
+  border-radius: 3px;
+  background-color: white;
+  margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 1300px) {
+  .formBox form input {
+    width: 100%;
+    font-size: 10px;
+    height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .formBox {
+    width: 60%;
+    padding: 10px 70px;
+  }
+
+  .templateOptions {
+    display: flex;
+    justify-content:space-between;
+  }
+
+  .templateOptions div {
+    padding: 5px;
+    width: 32%;
+    display: inline;
+  }
+
+  .formBox form .formSubmitButton {
+    display: inline;
+    padding: 5px;
+    width: 32%;
+  }
+
+  .formButtons button {
+    padding: 5px;
+  }
+
+}
